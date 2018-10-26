@@ -1,5 +1,5 @@
 const Tea = require('../models/Tea')
-const User = require('../models/User')
+//const User = require('../models/User')
 const Mood = require('../models/Moods')
 const mongoose = require('../db/connection')
 
@@ -43,4 +43,12 @@ const relaxed = new Mood({
         "herbalTea"
     ]
 })
+const refreshed = new Mood({
+    typeOfTea: "greenTea"
+})
 
+Tea.remove({})
+.then(() => Tea.insertMany([greenTea, blackTea, whiteTea, oolongTea, herbalTea]))
+    .then(() => Tea.save())
+    .then(() => console.log("Database seeded success"))
+    .then(() => mongoose.connection.close())
