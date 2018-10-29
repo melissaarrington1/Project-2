@@ -12,11 +12,21 @@ const userController = require('../controllers/user');
 //Tea Tree Home Page
 router.get('/', applicationController.index)
 
+//Show all Teas in the Database
 router.get('/teas', teasController.index)
 
+//Create a new user
 router.get('/user/new', userController.new)
-router.post('/user', userController.create)
-router.get('/user/:id',userController.show)
 
+
+router.post('/user', userController.create)
+
+//Display a user by their ID
+router.get('/user/:id',userController.show)
+//Update a user in the database
+router.put('/user/:id/update', userController.update)
+
+//Delete a user from the database
+router.delete('/user/:id', userController.delete)
 
 module.exports = router;

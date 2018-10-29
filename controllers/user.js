@@ -19,6 +19,21 @@ show: (req, res) => {
             user: user // placeholder. The 1st user refers to the 
         })
     })
+},
+
+update: (req, res) => {
+    User.findByIdAndUpdate(req.params.id)
+    .then((user) => {
+        res.render('user/update', {
+            user: user
+        })
+    })
+},
+delete: (req, res) => {
+    User.findByIdAndRemove({_id: req.params.id})
+    .then(() => {
+        res.redirect('/')
+    })
 }
 }
 
