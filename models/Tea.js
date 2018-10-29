@@ -3,6 +3,7 @@ const Schema = mongoose.Schema
 
 const Tea = new Schema({
     typeOfTea: String,
+    img: String,
     mood: String,
     caffiene_content: String
 })
