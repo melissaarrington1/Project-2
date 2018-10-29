@@ -2,7 +2,12 @@ const mongoose = require('../db/connection')
 const Schema = mongoose.Schema
 
 const User = new Schema({
-    favoriteTea: String,
+    favoriteTea: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Tea"
+        }
+    ],
     email: String,
     mood: [
         {
@@ -10,6 +15,7 @@ const User = new Schema({
             ref: "Mood"
         }
     ]
+
 })
 
 module.exports = mongoose.model('User', User)

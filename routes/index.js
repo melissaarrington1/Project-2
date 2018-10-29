@@ -9,11 +9,12 @@ const teasController = require('../controllers/teas');
 //   res.render('index', { title: 'Express' });
 // });
 
+//Tea Tree Home Page
 router.get('/', applicationController.index)
 
 router.get('/teas', teasController.index)
-//router.get('/mood', moodsController.index)
 
+//router.get('/teas/:_id', teasController.new)
 //router.get('')
 
 module.exports = router;
