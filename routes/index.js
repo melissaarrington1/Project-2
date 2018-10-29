@@ -15,7 +15,8 @@ router.get('/', applicationController.index)
 router.get('/teas', teasController.index)
 
 router.get('/user/new', userController.new)
-//router.get('')
 router.post('/user', userController.create)
+router.get('/user/:id',userController.show)
+
 
 module.exports = router;
