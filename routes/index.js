@@ -18,6 +18,7 @@ router.get('/teas', teasController.index)
 //Create a new user
 router.get('/user/new', userController.new)
 
+router.get('/user', userController.index)
 
 router.post('/user', userController.create)
 

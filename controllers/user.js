@@ -12,6 +12,14 @@ create: (req, res) => {
         res.redirect(`/user/${newUser._id}`)
     })
 },
+
+index: (req, res) => {
+    User.find().then((users) => {
+        res.render('user/index', {
+            users: users
+        })
+    })
+},
 show: (req, res) => {
     User.findById(req.params.id)
     .then((user) => { //user is an object
