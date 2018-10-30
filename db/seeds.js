@@ -10,23 +10,27 @@ const greenTea = new Tea({
     caffiene_content: "Moderate"
 })
 const jasmineTea = new Tea({
-    typeOfTea: "Green"
-    img: ""
-    
+    typeOfTea: "Green",
+    img: "http://aeroastery.com/wp-content/uploads/2012/08/red-flower-jasmine.jpg",
+    mood: "Floral",
+    caffiene_content: "Moderate"
 })
 const blackTea = new Tea({
-    typeOfTea:"Black",
+    typeOfTea: "Black",
+    img: 'https://cdn.shopify.com/s/files/1/0262/7435/products/Earl_Grey_1280.jpg?v=1527117020',
     mood: "Energizing",
     caffiene_content: "High"
 })
 
 const whiteTea = new Tea({
     typeOfTea: "White",
+    img: 'https://www.bettys.co.uk/media/catalog/product/cache/1/image/705x705/9df78eab33525d08d6e5fb8d27136e95/y/u/yu-luo-white-tea-2000871_2.jpg',
     mood: "Uplifting",
     caffiene_content: "Low"
 })
 const oolongTea = new Tea({
     typeOfTea: "Oolong",
+    img:'',
     mood: "Energizing",
     caffiene_content: "High"
 })
