@@ -4,10 +4,6 @@ const applicationController = require('../controllers/application');
 const teasController = require('../controllers/teas');
 const userController = require('../controllers/user');
 
-/* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'Express' });
-// });
 
 //Tea Tree Home Page
 router.get('/', applicationController.index)
