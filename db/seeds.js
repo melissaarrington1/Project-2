@@ -5,6 +5,7 @@ const mongoose = require('../db/connection')
 
 const greenTea = new Tea({
     typeOfTea: "Green",
+    img: "https://www.healthline.com/hlcmsresource/images/AN_images/AN79-Green_tea_on_wood-732x549-Thumb_0.jpg",
     mood: "Refreshing",
     caffiene_content: "Moderate"
 })

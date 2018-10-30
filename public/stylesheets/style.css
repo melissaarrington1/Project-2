@@ -17,10 +17,33 @@ a {
   color: whitesmoke;
   text-align: center;
   font-size: 10em;
-  text-shadow: 30px;
+  text-shadow: 2px 2px 4px #000000;
 }
-
+#sub-welcome {
+  font-family: 'Shadows Into Light', cursive;
+  color: whitesmoke;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
 #enter-button {
   margin-left: 45%;
   margin-right: 35%;
+  margin-top: 20%;
+}
+
+.create-user {
+  background: url('../images/long-tea-pic.jpg');
+  background-size: cover;
+}
+
+.create-user-main {
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  margin-top: 90%;
+}
+
+#delete-user {
+  margin-top: 20%;
 }
