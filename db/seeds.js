@@ -30,12 +30,13 @@ const whiteTea = new Tea({
 })
 const oolongTea = new Tea({
     typeOfTea: "Oolong",
-    img:'',
+    img:'https://www.taiwanteacrafts.com/wp-content/uploads/2015/10/Oriental-Beauty-Premium-Oolong-Tea.jpg',
     mood: "Energizing",
     caffiene_content: "High"
 })
 const herbalTea = new Tea({
     typeOfTea: "Herbal",
+    img: 'https://andreabeaman.com/wp-content/uploads/2017/04/iStock-512889439.jpg',
     mood: "Mellow",
     caffiene_content: "None"
 })
