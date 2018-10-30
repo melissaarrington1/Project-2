@@ -1,7 +1,7 @@
 <h1>Welcome To Your Tea Tree, {{user.name}}!</h1>
 
-{{teas}}
-<form id="delete-user" action="user/{{user._id}}?_method=DELETE" method="POST">
+<p>{{teas}}</p>
+<form id="delete-user" action="/user/{{user._id}}?_method=DELETE" method="POST">
 <button type='submit' class="btn btn-light" id="enter-button">Delete Your Tree</button>
 </form> 
 <!--goes back to home page-->

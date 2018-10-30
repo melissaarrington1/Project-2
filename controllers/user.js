@@ -40,7 +40,7 @@ update: (req, res) => {
 delete: (req, res) => {
     User.findByIdAndRemove(req.params.id)
     .then((user) => {
-        res.redirect('/user')
+        res.redirect('/')
     })
 }
 }

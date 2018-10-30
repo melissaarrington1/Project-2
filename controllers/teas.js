@@ -1,5 +1,5 @@
 const Tea = require('../models/Tea');
-// const User = require();
+const User = require('../models/User');
 const Mood = require('../models/Moods');
 
 const teasController = {
@@ -10,6 +10,14 @@ const teasController = {
                     teas: teas
                 })
             })
+    },
+    show: (req, res) => {
+        User.findById(req.params.id)
+        .then((user) => { //user is an object
+            res.render('teas/show', {
+                user: user // placeholder. The 1st user refers to the 
+            })
+        })
     }
 }
 

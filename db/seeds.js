@@ -11,6 +11,7 @@ const greenTea = new Tea({
 })
 const jasmineTea = new Tea({
     typeOfTea: "Green"
+    img: ""
     
 })
 const blackTea = new Tea({
