@@ -1,3 +1,8 @@
 <h1>Welcome To Your Tea Tree, {{user.name}}!</h1>
 
+
+<form action="user/{{user._id}}?_method=DELETE" method="POST">
+<button type='submit'>Delete This User</button>
+</form> 
+<!--goes back to home page-->
 <a href="/">Return to Home Page</a>

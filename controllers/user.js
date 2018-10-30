@@ -14,7 +14,7 @@ create: (req, res) => {
 },
 
 index: (req, res) => {
-    User.find().then((users) => {
+    User.find({}).then((users) => {
         res.render('user/index', {
             users: users
         })
@@ -38,9 +38,9 @@ update: (req, res) => {
     })
 },
 delete: (req, res) => {
-    User.findByIdAndRemove({_id: req.params.id})
-    .then(() => {
-        res.redirect('/')
+    User.findByIdAndRemove(req.params.id)
+    .then((user) => {
+        res.redirect('/user')
     })
 }
 }
