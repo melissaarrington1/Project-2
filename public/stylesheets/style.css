@@ -1,18 +1,26 @@
 body {
-  background: url('../images/tea.jpg');
-  background-size: cover;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-family: 'Shadows Into Light', cursive;
+  
 }
 
 a {
   color: #00B7FF;
 }
 
+.main-page {
+  background: url('../images/tea.jpg');
+  background-size: cover;
+}
 #welcome {
+  font-family: 'Shadows Into Light', cursive;
   color: whitesmoke;
   text-align: center;
   font-size: 10em;
   text-shadow: 30px;
+}
+
+#enter-button {
+  margin-left: 45%;
+  margin-right: 35%;
 }
