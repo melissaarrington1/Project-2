@@ -21,7 +21,8 @@ router.post('/user', userController.create)
 //Display a user by their ID
 router.get('/user/:id',userController.show)
 //Update a user in the database
-router.put('/user/:id/update', userController.update)
+router.put('/user/:id', userController.update)
+router.patch('/user/:id', userController.update)
 
 //Delete a user from the database
 router.delete('/user/:id', userController.delete)
