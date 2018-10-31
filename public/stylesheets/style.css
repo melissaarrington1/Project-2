@@ -8,6 +8,9 @@ a {
   color: #00B7FF;
 }
 
+img {
+  height: 340px;
+}
 .main-page {
   background: url('../images/tea.jpg');
   background-size: cover;
@@ -47,4 +50,9 @@ a {
 #delete-user {
   background-color: blanchedalmond;
   margin-top: 20%;
+}
+
+.card {
+  display: inline-block;
+  justify-content: center;
 }

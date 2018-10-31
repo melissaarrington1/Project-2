@@ -4,41 +4,41 @@ const Mood = require('../models/Moods')
 const mongoose = require('../db/connection')
 
 const greenTea = new Tea({
-    typeOfTea: "Green",
+    typeOfTea: "Green Tea",
     img: "https://www.healthline.com/hlcmsresource/images/AN_images/AN79-Green_tea_on_wood-732x549-Thumb_0.jpg",
     mood: "Refreshing",
-    caffiene_content: "Moderate"
+    caffiene_content: "Caffiene Level:", "Moderate"
 })
 const jasmineTea = new Tea({
-    typeOfTea: "Green",
+    typeOfTea: "Jasmine Tea",
     img: "http://aeroastery.com/wp-content/uploads/2012/08/red-flower-jasmine.jpg",
     mood: "Floral",
-    caffiene_content: "Moderate"
+    caffiene_content: "Caffiene Level:", "Moderate"
 })
 const blackTea = new Tea({
-    typeOfTea: "Black",
+    typeOfTea: "Black Tea",
     img: 'https://cdn.shopify.com/s/files/1/0262/7435/products/Earl_Grey_1280.jpg?v=1527117020',
     mood: "Energizing",
-    caffiene_content: "High"
+    caffiene_content: "Caffiene Level:", "High"
 })
 
 const whiteTea = new Tea({
-    typeOfTea: "White",
+    typeOfTea: "White Tea",
     img: 'https://www.bettys.co.uk/media/catalog/product/cache/1/image/705x705/9df78eab33525d08d6e5fb8d27136e95/y/u/yu-luo-white-tea-2000871_2.jpg',
     mood: "Uplifting",
-    caffiene_content: "Low"
+    caffiene_content: "Caffiene Level:", "Low"
 })
 const oolongTea = new Tea({
-    typeOfTea: "Oolong",
+    typeOfTea: "Oolong Tea",
     img:'https://www.taiwanteacrafts.com/wp-content/uploads/2015/10/Oriental-Beauty-Premium-Oolong-Tea.jpg',
     mood: "Energizing",
-    caffiene_content: "High"
+    caffiene_content: "Caffiene Level:", "High"
 })
 const herbalTea = new Tea({
-    typeOfTea: "Herbal",
-    img: 'https://andreabeaman.com/wp-content/uploads/2017/04/iStock-512889439.jpg',
+    typeOfTea: "Herbal Tea",
+    img: 'https://media.mehrnews.com/d/2017/12/04/4/2653853.jpg',
     mood: "Mellow",
-    caffiene_content: "None"
+    caffiene_content: "Caffiene Level:", "None"
 })
 const energized = new Mood({
     typeOfTea: [
