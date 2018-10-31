@@ -20,6 +20,10 @@ router.post('/user', userController.create)
 
 //Display a user by their ID
 router.get('/user/:id',userController.show)
+router.get('/user/:id/tea/:teaId', teasController.show)
+
+//Edit a user
+router.get('/:id/edit', userController.edit)
 //Update a user in the database
 router.put('/user/:id', userController.update)
 router.patch('/user/:id', userController.update)

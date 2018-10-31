@@ -1,9 +1,10 @@
 const mongoose = require('../db/connection')
 const Schema = mongoose.Schema
+const Tea = require('../models/Tea');
 
 const User = new Schema({
     name: String,
-    favoriteTea: [
+    tea: [
         {
             type: Schema.Types.ObjectId,
             ref: "Tea"

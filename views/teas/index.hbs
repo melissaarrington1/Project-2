@@ -1,21 +1,25 @@
 <body class="tea-body">
-    
 
-<main id="all-teas">
-    {{#each teas}}
-    <div class="card-deck border border-info shadow p-3 mb-5 bg-white rounded" style="width: 30rem;">
-        <img src="{{img}}">
-        <div class="card-body">
-            <h5 class="card-title">{{typeOfTea}}</h5>
-            <p class="card-text">{{mood}}</p>
-            <p>{{caffiene_content}}</p>
-            <a href="#" class="btn btn-primary">Select This Tea</a>
+
+    <main id="all-teas">
+        {{#each teas}}
+        <div class="card-deck border border-info shadow p-3 mb-5 bg-white rounded" style="width: 30rem;">
+            <img src="{{img}}">
+            <div class="card-body">
+                <h5 class="card-title">{{typeOfTea}}</h5>
+                <p class="card-text">{{mood}}</p>
+                <p>{{caffiene_content}}</p>
+                <a href="/user/:id/tea/:teaId" class="btn btn-primary">Select This Tea</a>
+            </div>
         </div>
-    </div>
-    {{/each}}
-    
-</main>
-<a href="/">
-    <button class="btn btn-light" id="return">Back To Home Page</button>
+        {{/each}}
+
+    </main>
+    <a href="/">
+        <button class="btn btn-light" id="return">Back To Home Page</button>
+    </a>
+
+    <a href="/user/:id">
+    <button class="btn btn-light" id="return-to-user">Back To Your Tree</button>
     </a>
 </body>

@@ -6,16 +6,18 @@ const teasController = {
     index: (req, res) => {
         
         Tea.find().then(teas => {
-                res.render('teas/index', {
+                res.render('teas/index',{
                     teas: teas
                 })
             })
     },
     show: (req, res) => {
-        User.findById(req.params.id)
-        .then((user) => { //user is an object
+        User.findById(req.params.id).populate('tea')
+        Tea.findById(req.params.teaId)
+        .then((tea) => { //user is an object
+            console.log(tea)
             res.render('teas/show', {
-                user: user // placeholder. The 1st user refers to the 
+                tea: tea // placeholder. The 1st user refers to the 
             })
         })
     }

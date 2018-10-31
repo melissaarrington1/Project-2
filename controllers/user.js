@@ -3,46 +3,57 @@ const User = require('../models/User')
 // const Mood = require('../models/Moods')
 
 const userController = {
-new: (req, res) => {
-    res.render('user/new')
-},
+    new: (req, res) => {
+        res.render('user/new')
+    },
 
-create: (req, res) => {
-    User.create(req.body).then((newUser) => {
-        res.redirect(`/user/${newUser._id}`)
-    })
-},
+    create: (req, res) => {
+        User.create(req.body).then((newUser) => {
+            res.redirect(`/user/${newUser._id}`)
+        })
+    },
 
-index: (req, res) => {
-    User.find({}).then((users) => {
-        res.render('user/index', {
-            users: users
+    index: (req, res) => {
+        User.find({}).then((users) => {
+            res.render('user/index', {
+                users: users
+            })
         })
-    })
-},
-show: (req, res) => {
-    User.findById(req.params.id)
-    .then((user) => { //user is an object
-        res.render('user/show', {
-            user: user // placeholder. The 1st user refers to the 
-        })
-    })
-},
+    },
+    show: (req, res) => {
+        console.log(req.params.id)
+        User.findById(req.params.id).populate('tea')
+            .then(user => { //user is an object
+                console.log(user)
+                res.render('user/show', {
+                    user: user // placeholder. The 1st user refers to the 
+                })
+            })
+    },
 
-update: (req, res) => {
-    User.findByIdAndUpdate(req.params.id)
-    .then((user) => {
-        res.render('user/update', {
-            user: user
+    edit: (req, res) => {
+        User.findById(req.params.id).then(user => {
+            res.render('user/edit', 
+            {
+                user: user
+            })
         })
-    })
-},
-delete: (req, res) => {
-    User.findByIdAndRemove(req.params.id)
-    .then((user) => {
-        res.redirect('/')
-    })
-}
+    },
+
+    update: (req, res) => {
+        User.findByIdAndUpdate(req.params.id, req.body)
+            .then((userUpdated) => {
+                res.render(`user/${userUpdated._id}`, {
+                    user: user
+                })
+            })
+    },
+    delete: (req, res) => {
+        User.findByIdAndRemove(req.params.id)
+            .then((user) => {
+                res.redirect('/')
+            })
+    }
 }
 
 

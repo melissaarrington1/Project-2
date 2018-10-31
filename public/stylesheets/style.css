@@ -1,7 +1,7 @@
 body {
-  padding: 50px;
+  padding: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  
+
 }
 
 a {
@@ -11,10 +11,12 @@ a {
 img {
   height: 340px;
 }
+
 .main-page {
   background: url('../images/tea.jpg');
   background-size: cover;
 }
+
 #welcome {
   font-family: 'Shadows Into Light', cursive;
   color: whitesmoke;
@@ -22,12 +24,14 @@ img {
   font-size: 10em;
   text-shadow: 2px 2px 4px #000000;
 }
+
 #sub-welcome {
   font-family: 'Shadows Into Light', cursive;
   color: whitesmoke;
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
 }
+
 #enter-button {
   margin-left: 45%;
   margin-right: 35%;
@@ -48,7 +52,7 @@ img {
 }
 
 #delete-user {
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
   margin-top: 20%;
 }
 
@@ -56,23 +60,54 @@ img {
   display: inline-block;
   justify-content: center;
 }
+
 .card-body {
   text-align: center;
 }
+
 .tea-body {
   background: url('../images/tree.jpeg');
   background-attachment: fixed;
+  background-size: 100%;
+
 
 }
-#all-teas {
+
+#welcome-user {
+  color: whitesmoke;
   
+}
+
+#all-teas {
+
   display: flex;
   justify-content: space-between;
-  /* margin-top: 20%;
-  margin-bottom: 20%; */
+  margin-top: 20%;
+  margin-bottom: 20%; 
+}
+
+#return-to-user {
+  position: absolute;
+
+}
+#h2 {
+  color: whitesmoke;
+  font-size: 4rem;
+  text-align: center;
 }
 
 #return {
   position: absolute;
-  margin-bottom: 10%;
+
+}
+
+.center-tea {
+  
+  margin-left: 37%;
+  margin-right: 40%;
+}
+
+.individual-tea-body {
+  background: url('../images/jamez-picard-356760-unsplash.jpg');
+  background-size: cover;
 }

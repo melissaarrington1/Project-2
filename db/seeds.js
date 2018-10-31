@@ -58,8 +58,9 @@ const refreshed = new Mood({
 })
 
 const user = new User({
+    name: 'Melissa',
     email: 'melissa@yahoo.com',
-    favoriteTea: [greenTea, blackTea, whiteTea, oolongTea, herbalTea, jasmineTea],
+    tea: [greenTea, blackTea, whiteTea, oolongTea, herbalTea, jasmineTea],
     mood: [refreshed, relaxed, energized]
 })
 

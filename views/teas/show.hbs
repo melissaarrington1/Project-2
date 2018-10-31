@@ -1,0 +1,19 @@
+<body class="individual-tea-body">
+    
+
+<h2 id="h2"> {{tea.typeOfTea}} has been added to your Tea Tree!</h2>
+<center class="center-tea" id="all-teas">
+    <div class="card-deck border border-info shadow p-3 mb-5 bg-white rounded" style="width: 30rem;">
+            <img src="{{tea.img}}">
+            <div class="card-body">
+                <h5 class="card-title">{{tea.typeOfTea}}</h5>
+                <p class="card-text">{{mood}}</p>
+                <p>{{caffiene_content}}</p>
+                
+            </div>
+        </div>
+</center>
+<a href="/user/:id">
+    <button class="btn btn-light" id="return-to-user">Back To Your Tree</button>
+    </a>
+</body>
