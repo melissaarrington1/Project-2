@@ -60,7 +60,9 @@ img {
   text-align: center;
 }
 .tea-body {
-  background-color: wheat;
+  background: url('../images/tree.jpeg');
+  background-attachment: fixed;
+
 }
 #all-teas {
   
