@@ -7,5 +7,11 @@ This is a full stack application, that allows a user to create an account, and s
 
 This app uses full CRUD methods, Node.js, Express.js, MongoDB, Mongoose, and Handlebars.
 
+**Link To Heroku**
+https://salty-lowlands-92993.herokuapp.com/
 
-5bd9cea3a13b3c1dd5134186
+**Link To ERD**
+https://www.lucidchart.com/documents/edit/4b4d0130-342e-4669-b019-f9a3b5a2290e/0
+
+**Link To Trello**
+https://trello.com/b/ebULj5zz/project-2
