@@ -3,7 +3,8 @@ Tea App
 
 "The Tea Tree"
 
-##About this App##
+*About this App*
+
 "The Tea Tree"
 
 Are you a tea lover? As an avid tea lover, I wanted to create an application where you can view different types of drinking tea, and be able to save your favorites to your "Tea Tree".
